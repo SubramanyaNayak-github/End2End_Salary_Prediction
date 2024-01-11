@@ -1,0 +1,47 @@
+<!-- templates/index.html -->
+
+
+<!DOCTYPE html>
+
+<html >
+
+<head>
+ 
+  
+</head>
+<body>
+    <div>
+       <h1>Salary Prediction</h1>
+   
+        <!-- Main Input For Receiving Query to our ML -->
+    
+        <form action="{{ url_for('predict') }}" method="post"> 
+            <input type="text" name="Age" placeholder="Age" required="required" />
+            
+            <!-- Gender Dropdown -->
+            <select name="Gender" id="genderDropdown" required="required">
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+            </select>
+            
+            <!-- Education Level Dropdown -->
+            <select name="EducationLevel" required="required">
+                <option value="Bachelor's">Bachelor's</option>
+                <option value="Master's">Master's</option>
+                <option value="PhD">PhD</option>
+            </select>
+            
+            <input type="text" name="YearsOfExperience" placeholder="Years of Experience" required="required" />
+           
+            <button type="submit">Predict</button>
+        </form>
+        
+      <br>
+      <br>
+      {{ prediction_text }}
+   
+    </div>
+   
+   
+   </body>
+   </html>
