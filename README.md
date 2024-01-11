@@ -22,9 +22,9 @@ wb == write Bytes
 
 - Create AwS Account
 
-- Create EC2 instance
-
-- Download putty and puuty gen
 
 
- URI : public.ecr.aws/u9u3y4s2/salary
+
+
+
+ URI : 380675867318.dkr.ecr.eu-north-1.amazonaws.com/salary
